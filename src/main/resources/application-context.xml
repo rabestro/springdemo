@@ -4,8 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="testBean"
-          class="com.github.rabestro.springdemo.TestBean">
+    <bean id="testBean" class="com.github.rabestro.springdemo.TestBean">
         <constructor-arg value="Neil"/>
     </bean>
 </beans>
