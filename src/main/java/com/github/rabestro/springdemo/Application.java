@@ -10,8 +10,6 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
-
         final var context = new ClassPathXmlApplicationContext("application-context.xml");
 
         TestBean testBean = context.getBean("testBean", TestBean.class);
