@@ -1,4 +1,4 @@
-package com.github.rabestro.springdemo;
+package springdemo;
 
 /**
  * @author Neil Alishev

@@ -1,6 +1,4 @@
-package com.github.rabestro.springdemo;
-
-import org.springframework.stereotype.Component;
+package springdemo;
 
 /**
  * @author Neil Alishev
