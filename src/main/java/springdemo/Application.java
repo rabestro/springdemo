@@ -1,4 +1,4 @@
-package com.github.rabestro.springdemo;
+package springdemo;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -14,8 +14,7 @@ public class Application implements CommandLineRunner {
         final var userBean = context.getBean("userBean", UserBean.class);
         System.out.println(format("Hello, {0}!", userBean.getName()));
 
-        final var music = context.getBean("musicBean", Music.class);
-        final var musicPlayer = new MusicPlayer(music);
+        final var musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic();
 
         context.close();
