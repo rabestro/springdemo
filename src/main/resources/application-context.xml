@@ -4,7 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="testBean" class="com.github.rabestro.springdemo.TestBean">
+    <bean id="userBean" class="com.github.rabestro.springdemo.UserBean">
         <constructor-arg value="Neil"/>
+    </bean>
+
+
+    <bean id="musicBean"
+          class="com.github.rabestro.springdemo.RockMusic">
     </bean>
 </beans>

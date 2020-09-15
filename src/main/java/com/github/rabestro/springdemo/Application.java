@@ -6,14 +6,18 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import static java.text.MessageFormat.format;
 
 public class Application implements CommandLineRunner {
-    TestBean testBean;
+    UserBean userBean;
 
     @Override
     public void run(String... args) throws Exception {
         final var context = new ClassPathXmlApplicationContext("application-context.xml");
 
-        TestBean testBean = context.getBean("testBean", TestBean.class);
-        System.out.println(format("Hello, {0}!", testBean.getName()));
+        UserBean userBean = context.getBean("userBean", UserBean.class);
+        System.out.println(format("Hello, {0}!", userBean.getName()));
+
+        final var music = context.getBean("musicBean", Music.class);
+        final var musicPlayer = new MusicPlayer(music);
+        musicPlayer.playMusic();
 
         context.close();
     }

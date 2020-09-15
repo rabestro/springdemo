@@ -5,10 +5,10 @@ import org.springframework.stereotype.Component;
 /**
  * @author Neil Alishev
  */
-public class TestBean {
+public class UserBean {
     private String name;
 
-    public TestBean(String name) {
+    public UserBean(String name) {
         this.name = name;
     }
 
