@@ -12,7 +12,7 @@
     <bean id="bundleSongs"
           class="java.util.ResourceBundle"
           factory-method="getBundle">
-        <constructor-arg value="${songs.bundle}"/>
+        <constructor-arg value="songs"/>
     </bean>
 
     <bean id="userBean" class="springdemo.UserBean">
@@ -24,7 +24,9 @@
     </bean>
 
     <bean id="jazzMusic"
-          class="springdemo.JazzMusic">
+          class="springdemo.JazzMusic"
+          init-method="init">
+        <property name="bundle" ref="bundleSongs"/>
     </bean>
 
     <bean id="classicalMusic"
