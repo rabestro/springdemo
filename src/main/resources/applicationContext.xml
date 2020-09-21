@@ -14,8 +14,16 @@
     </bean>
 
 
-    <bean id="musicBean"
+    <bean id="rockMusic"
           class="springdemo.RockMusic">
+    </bean>
+
+    <bean id="jazzMusic"
+          class="springdemo.JazzMusic">
+    </bean>
+
+    <bean id="classicalMusic"
+          class="springdemo.ClassicalMusic">
     </bean>
 
     <bean id="musicPlayer" class="springdemo.MusicPlayer">
