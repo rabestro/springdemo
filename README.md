@@ -21,3 +21,7 @@ Spring Framework. Урок 6: Внедрение зависимостей. Depen
 
 Spring Framework. Урок 7: Bean scope (Область видимости бинов).
 
+## Stage/4
+
+Spring Framework. Урок 8: Жизненный цикл бина (Bean Lifecycle). Init, Destroy и Factory методы.
+
