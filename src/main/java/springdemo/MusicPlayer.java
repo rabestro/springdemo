@@ -1,6 +1,5 @@
 package springdemo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,7 +8,7 @@ import java.util.List;
 public class MusicPlayer {
     private String name;
     private int volume;
-    private List<Music> musicList = new ArrayList<>();
+    private List<Music> musicList;
 
     public MusicPlayer() {
     }
@@ -17,8 +16,6 @@ public class MusicPlayer {
     public void setMusicList(List<Music> musicList) {
         this.musicList = musicList;
     }
-
-    // IoC
 
     public String getName() {
         return name;
@@ -35,7 +32,6 @@ public class MusicPlayer {
     public void setVolume(int volume) {
         this.volume = volume;
     }
-
 
     public void playMusic() {
         musicList.forEach(music -> System.out.println("Playing: " + music.getSong()));
