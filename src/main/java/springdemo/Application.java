@@ -15,9 +15,13 @@ public class Application implements CommandLineRunner {
         System.out.println(format("Hello, {0}!", userBean.getName()));
 
         final var musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        final var otherPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+        otherPlayer.setVolume(30);
+
         musicPlayer.playMusic();
         System.out.println(musicPlayer.getName());
         System.out.println(musicPlayer.getVolume());
+        System.out.println(otherPlayer.getVolume());
         context.close();
     }
 }
