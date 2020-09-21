@@ -1,5 +1,8 @@
 package springdemo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author Neil Alishev
  */
@@ -7,6 +10,12 @@ public class MusicPlayer {
     private Music music;
     private String name;
     private int volume;
+
+    public void setMusicList(List<Music> musicList) {
+        this.musicList = musicList;
+    }
+
+    private List<Music> musicList = new ArrayList<>();
 
     public MusicPlayer() {
     }
