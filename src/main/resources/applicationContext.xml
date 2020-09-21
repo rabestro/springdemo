@@ -9,10 +9,15 @@
 
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
+    <bean id="bundleSongs"
+          class="java.util.ResourceBundle"
+          factory-method="getBundle">
+        <constructor-arg value="${songs.bundle}"/>
+    </bean>
+
     <bean id="userBean" class="springdemo.UserBean">
         <constructor-arg value="${userBean.name}"/>
     </bean>
-
 
     <bean id="rockMusic"
           class="springdemo.RockMusic">
