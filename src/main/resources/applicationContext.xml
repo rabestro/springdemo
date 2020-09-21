@@ -26,9 +26,19 @@
           class="springdemo.ClassicalMusic">
     </bean>
 
+    <bean id="musicList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="rockMusic" />
+                <ref bean="jazzMusic" />
+                <ref bean="classicalMusic" />
+            </list>
+        </constructor-arg>
+    </bean>
+
     <bean id="musicPlayer" class="springdemo.MusicPlayer">
-        <property name="music" ref="musicBean"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
+        <property name="musicList" ref="musicList"/>
     </bean>
 </beans>
