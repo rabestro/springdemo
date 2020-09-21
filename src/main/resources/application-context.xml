@@ -13,8 +13,7 @@
           class="springdemo.RockMusic">
     </bean>
 
-    <bean id="musicPlayer"
-          class="springdemo.MusicPlayer">
-        <constructor-arg ref="musicBean"/>
+    <bean id="musicPlayer" class="springdemo.MusicPlayer">
+        <property name="music" ref="musicBean"/>
     </bean>
 </beans>
