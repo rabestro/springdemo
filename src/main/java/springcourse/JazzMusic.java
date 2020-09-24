@@ -1,4 +1,4 @@
-package springdemo;
+package springcourse;
 
 import java.util.ResourceBundle;
 

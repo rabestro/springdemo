@@ -7,6 +7,8 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:component-scan base-package="springcourse"/>
+
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
     <bean id="bundleSongs"
@@ -15,22 +17,14 @@
         <constructor-arg value="songs"/>
     </bean>
 
-    <bean id="userBean" class="springdemo.UserBean">
+    <bean id="userBean" class="springcourse.UserBean">
         <constructor-arg value="${userBean.name}"/>
     </bean>
 
-    <bean id="rockMusic"
-          class="springdemo.RockMusic">
-    </bean>
-
     <bean id="jazzMusic"
-          class="springdemo.JazzMusic"
+          class="springcourse.JazzMusic"
           init-method="init">
         <property name="bundle" ref="bundleSongs"/>
-    </bean>
-
-    <bean id="classicalMusic"
-          class="springdemo.ClassicalMusic">
     </bean>
 
     <bean id="musicList" class="java.util.ArrayList">
@@ -44,7 +38,7 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="springdemo.MusicPlayer"
+          class="springcourse.MusicPlayer"
           scope="prototype">
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
