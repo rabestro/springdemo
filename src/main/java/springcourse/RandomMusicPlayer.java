@@ -35,11 +35,10 @@ public class RandomMusicPlayer implements MusicPlayer {
 
     @Override
     public void playMusic(Music.Genre genre) {
-        var music = switch (genre) {
+        System.out.println("Playing: " + (switch (genre) {
             case CLASSIC -> classic;
             case JAZZ -> jazz;
             default -> rock;
-        };
-        System.out.println("Playing: " + music.getSongs());
+        }).getSongs());
     }
 }
