@@ -29,3 +29,7 @@ Spring Framework. Урок 8: Жизненный цикл бина (Bean Lifecyc
 
 Spring Framework. Урок 9: Аннотации. Введение.
 
+## Stage/6
+
+Spring Framework. Урок 10: Аннотация @Autowired. Внедрение зависимостей (Dependency Injection).
+
