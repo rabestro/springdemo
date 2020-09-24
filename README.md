@@ -33,3 +33,5 @@ Spring Framework. Урок 9: Аннотации. Введение.
 
 Spring Framework. Урок 10: Аннотация @Autowired. Внедрение зависимостей (Dependency Injection).
 
+## Stage/7
+
