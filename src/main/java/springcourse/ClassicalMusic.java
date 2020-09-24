@@ -11,16 +11,16 @@ import java.util.ResourceBundle;
 @Component
 public class ClassicalMusic implements Music {
     private ResourceBundle bundle;
-    private String song;
+    private String[] song;
 
     @Autowired
     public void setBundle(ResourceBundle bundle) {
         this.bundle = bundle;
-        song = bundle.getString("classical");
+        song = bundle.getString("classical").split("\f");
     }
 
     @Override
-    public String getSong() {
-        return song;
+    public String getSongs() {
+        return Music.pickSong(song);
     }
 }

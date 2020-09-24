@@ -4,18 +4,18 @@ import java.util.ResourceBundle;
 
 public class JazzMusic implements Music {
     private ResourceBundle bundle;
-    private String song;
+    private String[] songs;
 
     public void setBundle(ResourceBundle bundle) {
         this.bundle = bundle;
     }
 
     private void init() {
-        song = bundle.getString("jazz");
+        songs = bundle.getString("jazz").split("\f");
     }
 
     @Override
-    public String getSong() {
-        return song;
+    public String getSongs() {
+        return Music.pickSong(songs);
     }
 }

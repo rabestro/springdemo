@@ -38,7 +38,7 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="springcourse.MusicPlayer"
+          class="springcourse.SimpleMusicPlayer"
           scope="prototype">
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
