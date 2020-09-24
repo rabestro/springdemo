@@ -1,4 +1,4 @@
-package springdemo;
+package springcourse;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
