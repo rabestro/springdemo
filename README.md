@@ -25,3 +25,7 @@ Spring Framework. Урок 7: Bean scope (Область видимости би
 
 Spring Framework. Урок 8: Жизненный цикл бина (Bean Lifecycle). Init, Destroy и Factory методы.
 
+## Stage/5
+
+Spring Framework. Урок 9: Аннотации. Введение.
+
