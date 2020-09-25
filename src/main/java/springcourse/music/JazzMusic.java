@@ -3,14 +3,11 @@ package springcourse.music;
 import java.util.ResourceBundle;
 
 public class JazzMusic implements Music {
-    private ResourceBundle bundle;
-    private String[] songs;
+    private final ResourceBundle bundle;
+    private final String[] songs;
 
-    public void setBundle(ResourceBundle bundle) {
+    public JazzMusic(ResourceBundle bundle) {
         this.bundle = bundle;
-    }
-
-    private void init() {
         songs = bundle.getString("jazz").split("\f");
     }
 
