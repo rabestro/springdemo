@@ -8,12 +8,8 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         final var context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        final var player1 = context.getBean("randomMusicPlayer", MusicPlayer.class);
-        final var player2 = context.getBean("randomMusicPlayer", MusicPlayer.class);
-        player1.playMusic();
-        player1.playMusic();
-        player2.playMusic();
-        player2.playMusic();
+        final var player = context.getBean("musicPlayer", MusicPlayer.class);
+        player.playMusic();
         context.close();
     }
 }

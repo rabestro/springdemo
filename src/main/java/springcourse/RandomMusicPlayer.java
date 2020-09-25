@@ -9,12 +9,11 @@ import springcourse.music.Music;
 import javax.annotation.PostConstruct;
 import java.util.Random;
 
-@Component
 @Scope("prototype")
 public class RandomMusicPlayer implements MusicPlayer {
 
-    private Music music;
     private final Music[] genres;
+    private Music music;
 
     @Autowired
     public RandomMusicPlayer(

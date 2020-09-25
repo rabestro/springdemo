@@ -3,14 +3,13 @@ package springcourse;
 import springcourse.music.Music;
 
 import java.util.List;
+import java.util.Random;
 
-/**
- * @author Neil Alishev
- */
-public class SimpleMusicPlayer {
+public class SimpleMusicPlayer implements MusicPlayer {
     private String name;
     private int volume;
     private List<Music> musicList;
+    private Random random = new Random();
 
     public SimpleMusicPlayer() {
     }
@@ -36,6 +35,9 @@ public class SimpleMusicPlayer {
     }
 
     public void playMusic() {
-        musicList.forEach(music -> System.out.println("Playing: " + music.getSongs()));
+        System.out.println(musicList
+                .get(random.nextInt(musicList.size()))
+                .getSongs()
+        );
     }
 }

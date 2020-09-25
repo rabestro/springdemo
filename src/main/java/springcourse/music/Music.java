@@ -2,9 +2,6 @@ package springcourse.music;
 
 import java.util.Random;
 
-/**
- * @author Neil Alishev
- */
 public interface Music {
     Random random = new Random();
 

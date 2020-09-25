@@ -40,3 +40,7 @@ Spring Framework. Урок 11: Аннотация @Qualifier. Внедрение
 ## Stage/8
 
 Spring Framework. Урок 12: Аннотации @Scope, @Value, @PostConstruct, @PreDestroy.
+
+## Stage/9
+
+Spring Framework. Урок 13: Конфигурация с помощью Java кода.
