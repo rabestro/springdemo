@@ -36,3 +36,7 @@ Spring Framework. Урок 10: Аннотация @Autowired. Внедрение
 ## Stage/7
 
 Spring Framework. Урок 11: Аннотация @Qualifier. Внедрение зависимостей (Dependency Injection).
+
+## Stage/8
+
+Spring Framework. Урок 12: Аннотации @Scope, @Value, @PostConstruct, @PreDestroy.
