@@ -17,10 +17,6 @@
         <constructor-arg value="songs"/>
     </bean>
 
-    <bean id="userBean" class="springcourse.UserBean">
-        <constructor-arg value="${userBean.name}"/>
-    </bean>
-
     <bean id="jazzMusic"
           class="springcourse.JazzMusic"
           init-method="init">

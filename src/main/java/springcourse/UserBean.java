@@ -1,20 +1,15 @@
 package springcourse;
 
-/**
- * @author Neil Alishev
- */
-public class UserBean {
-    private String name;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
-    public UserBean(String name) {
-        this.name = name;
-    }
+@Component
+public class UserBean {
+    @Value("${userBean.name}")
+    private String name;
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }
