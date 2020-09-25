@@ -1,5 +1,7 @@
 package springcourse;
 
+import springcourse.music.Music;
+
 public interface MusicPlayer {
     void playMusic();
 

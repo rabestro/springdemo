@@ -3,6 +3,7 @@ package springcourse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import springcourse.music.Music;
 
 @Component
 public class RandomMusicPlayer implements MusicPlayer {

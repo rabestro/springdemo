@@ -1,4 +1,4 @@
-package springcourse;
+package springcourse.music;
 
 import java.util.Random;
 

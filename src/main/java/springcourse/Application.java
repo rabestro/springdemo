@@ -2,6 +2,7 @@ package springcourse;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import springcourse.music.Music;
 
 public class Application implements CommandLineRunner {
 

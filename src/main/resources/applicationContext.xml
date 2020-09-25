@@ -18,7 +18,7 @@
     </bean>
 
     <bean id="jazzMusic"
-          class="springcourse.JazzMusic"
+          class="springcourse.music.JazzMusic"
           init-method="init">
         <property name="bundle" ref="bundleSongs"/>
     </bean>
